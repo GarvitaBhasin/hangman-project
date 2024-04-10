@@ -7,6 +7,10 @@ class HangmanGame:
         self.master.title("Hangman Game")
         self.master.config(bg="#FFDAB9") 
 
+        # Add game name label
+        self.game_name_label = tk.Label(self.master, text=" WORD WACKY", font=("Arial", 24), bg="#FFDAB9")
+        self.game_name_label.pack()
+
         self.word_categories = {
             "Fruits": ["apple", "banana", "orange", "grape", "strawberry", "watermelon", "kiwi", "pineapple", "blueberry"],
             "Animals": ["dog", "cat", "elephant", "lion", "tiger", "giraffe", "zebra", "monkey", "penguin"]
